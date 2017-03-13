@@ -32,6 +32,7 @@ class App extends Component {
 
     return (
       <div>
+        <h1>Tiny<span>Tube</span></h1>
         <SearchBar
           onSearchTermChange={videoSearch} />
 

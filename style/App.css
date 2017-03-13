@@ -5,6 +5,13 @@ body {
 h1{
   text-align: center;
   margin-top: 15px;
+  font-weight: bold
+}
+span {
+  color: black;
+  background: red;
+  border-radius: 10px;
+  padding: 2px;
 }
 .search-bar {
   margin: 20px;
