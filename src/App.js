@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import _ from 'lodash';
 import '../style/App.css';
 import SearchBar from './components/search_bar';
 import YTSearch from 'youtube-api-search';
+import VideoDetail from './components/video_details';
 const API_KEY = 'AIzaSyCVYEm0cS115IltN15h31ueQ74CJhYHdOI';
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
       selectedVideo : null
     };
 
-    this.videoSearch('react');
+    this.videoSearch('React JS');
   }
 
   videoSearch(term) {
@@ -34,6 +34,8 @@ class App extends Component {
       <div>
         <SearchBar
           onSearchTermChange={videoSearch} />
+
+        <VideoDetail video={this.state.selectedVideo} />
       </div>
     );
   }
